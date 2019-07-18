@@ -1,0 +1,46 @@
+.lists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .list {
+    .list-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: purple;
+      text-align: center;
+    }
+
+    &.dragging-over {
+      background-color: darkgreen;
+    }
+
+    width: 280px;
+    height: 80vh;
+    background-color: #8080802b;
+    border: 1px solid #80808029;
+
+    .task {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+      width: 100%;
+      margin: 0 auto;
+      margin-bottom: 1rem;
+      height: 10rem;
+      background-color: lighten(silver, 20%);
+      border: 1px solid black;
+
+      -webkit-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: 4px 2px 5px 0px rgba(0, 0, 0, 0.75);
+
+      &.highlighted {
+        background-color: lightseagreen;
+      }
+    }
+  }
+}
